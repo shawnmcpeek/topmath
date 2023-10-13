@@ -1,0 +1,60 @@
+
+body {
+	margin: 0px;
+    background-image: "rm373batch13-088.jpg";
+    background-size: cover;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h1{
+	font-family: fantasy;
+	font-size: 3em;
+    color: white;
+	border-bottom: 2px solid pink;
+	border-right: 2px solid pink;
+	width: 400px;
+	text-align: center;
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 10px;
+	background-color: darkred;
+}
+img {
+	width: 300px;
+	height: 200px;
+	margin: 20px;
+	transition: all 1s;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+p{
+    font-family: fantasy;
+	font-size: 18px;
+    color: white;
+    margin-left: 50px;
+	border: 2px solid pink;
+	width: 400px;
+	text-align: center;
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 10px;
+	background-color: darkred;
+}
+a{
+    font-family: fantasy;
+	font-size: 18px;
+    color: white;
+    margin-left: 50px;
+	border: 2px solid pink;
+	width: 400px;
+	text-align: center;
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 10px;
+	background-color: darkred;
+}

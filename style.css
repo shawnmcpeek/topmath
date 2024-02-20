@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding-left: 350px;
+  height: 100vh;
+  background-image: url("static/fractal-2035686_1280.jpg"); /* Use url() to specify the image path */
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+}
+
+nav {
+  font-size: x-large;
+  width: 300px;
+  background-color: transparent;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav li {
+  padding: 10px;
+}
+
+iframe {
+  width: calc(100% - 350px); /* Adjust for padding-left of the body */
+  height: 100%;
+  border: none;
+}
+
+.libre-franklin, body, nav {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+h1, h2, p {
+  color: #ffffff; /* Set font color to white */
+}

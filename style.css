@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding-left: 350px;
   height: 100vh;
-  background-image: url("static/fractal-2035686_1280.jpg"); /* Use url() to specify the image path */
-  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-image: url("static/fractal-2035686_1280.jpg");
+  background-size: cover;
 }
 
 nav {
-  font-size: x-large;
+  font-size: large;
   width: 300px;
   background-color: transparent;
   height: 100vh;
@@ -22,7 +22,7 @@ nav li {
 }
 
 iframe {
-  width: calc(100% - 350px); /* Adjust for padding-left of the body */
+  width: calc(100% - 300px);
   height: 100%;
   border: none;
 }
@@ -31,6 +31,45 @@ iframe {
   font-family: "Libre Franklin", sans-serif;
 }
 
-h1, h2, p {
-  color: #ffffff; /* Set font color to white */
+.kdam-thmor pro-regular , h1{
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
+
+h1, h2, p, footer {
+  color: #ffffff;
+}
+h1 {
+  font-size: xx-large;
+}
+
+/* Media query for screens with a maximum width of 768px (typical tablets and smaller screens) */
+@media only screen and (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+  nav {
+    left: -300px; /* Initially hide the navbar off-screen */
+  }
+  nav.show {
+    left: 0;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: darkred; /* Button color */
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border: solid;
+  border-color: darkgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Change color on hover */
+}
+

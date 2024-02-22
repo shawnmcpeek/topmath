@@ -1,4 +1,11 @@
-/* Default styles for navbar */
+body {
+  margin: 0;
+  padding-left: 350px;
+  height: 100vh;
+  background-image: url("static/fractal-2035686_1280.jpg");
+  background-size: cover;
+}
+
 nav {
   font-size: large;
   width: 300px;
@@ -10,12 +17,16 @@ nav {
   left: 0;
 }
 
-/* Styles for navbar items */
 nav li {
   padding: 10px;
 }
 
-/* Font styles */
+iframe {
+  width: calc(100% - 300px);
+  height: 100%;
+  border: none;
+}
+
 .libre-franklin, body, nav {
   font-family: "Libre Franklin", sans-serif;
 }
@@ -26,26 +37,26 @@ nav li {
   font-style: normal;
 }
 
-/* Colors for text */
 h1, h2, p, footer {
   color: #ffffff;
 }
-
-/* Larger font size for h1 */
 h1 {
   font-size: xx-large;
 }
 
-/* Media query for screens with a maximum width of 768px (typical tablets and smaller screens) */
-@media only screen and (max-width: 768px) {
-  /* Shrink navbar width */
-  nav {
-    width: 100px;
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: darkred; /* Button color */
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border: solid;
+  border-color: darkgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  /* Adjust padding for navbar items */
-  nav li {
-    padding: 5px;
-  }
+.button:hover {
+  background-color: darkgray; /* Change color on hover */
+  border-color: darkred ;
 }
